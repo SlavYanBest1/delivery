@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private const string IS_WALKING = "IsWalking";
 
-    // Update is called once per frame
-    void Update()
-    {
+    [SerializeField] private NewBehaviourScript MonoBehaviour;
+    private Animator animator;
+
+    private void Awake() {
+        animator = GetComponent<Animator>();
         
+
+    }
+    
+    private void Update() {
+        animator.SetBool(IS_WALKING, MonoBehaviour.IsWalking());
     }
 }
