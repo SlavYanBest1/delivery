@@ -5,6 +5,7 @@ public class NewBehaviourScript : MonoBehaviour{
     [SerializeField] private GameInput gameInput;
 
     private bool isWalking;
+    private Vector3 lastInteractDir;
     private void Update() {    
         HandleMovement();
         HandleInteractions();
@@ -20,12 +21,17 @@ public class NewBehaviourScript : MonoBehaviour{
         
         Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
 
+        if (moveDir != Vector3.zero) {
+            lastInteractDir = moveDir;
+        }
+
         float interactDistance = 2f;
         if (Physics.Raycast(transform.position, moveDir, out RaycastHit raycastHit, interactDistance)) {
-            Debug.Log(raycastHit.transform);          
-        } else {
-            Debug.Log("-");
-        }
+           if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter)) {   
+               // Has clearCounter
+               clearCounter.Interact();
+           }      
+        } 
     }
 
     private void HandleMovement() {
