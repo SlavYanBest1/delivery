@@ -387,6 +387,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7134953531709510321}
+    - targetCorrespondingSourceObject: {fileID: 4468839561234043743, guid: d72bee846803d074784ffb8f64e993ca,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4266221662912341735}
   m_SourcePrefab: {fileID: 100100000, guid: d72bee846803d074784ffb8f64e993ca, type: 3}
 --- !u!224 &3917114506632956546 stripped
 RectTransform:
@@ -443,6 +447,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuttingCounter: {fileID: 1779444835997682853}
   barImage: {fileID: 3871997366731853431}
+--- !u!114 &4266221662912341735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173711045385143689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dccef6cbf75ad4b41b096a9228fa5e8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 2
 --- !u!1 &4470444294469591873 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4171094756720850327, guid: d72bee846803d074784ffb8f64e993ca,
@@ -536,7 +553,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4589716710238282922, guid: d72bee846803d074784ffb8f64e993ca,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5248824868062393360}
+      addedObject: {fileID: 124119028925444370}
   m_SourcePrefab: {fileID: 100100000, guid: d72bee846803d074784ffb8f64e993ca, type: 3}
 --- !u!1 &1818768535427117688 stripped
 GameObject:
@@ -544,7 +561,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2777704330250622674}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5248824868062393360
+--- !u!114 &124119028925444370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -553,7 +570,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1818768535427117688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ab4ed3510fc15e4ab919dc37ed74330, type: 3}
+  m_Script: {fileID: 11500000, guid: b197fba9b8060cd4991c8bc9dee19b35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cuttingCounter: {fileID: 1779444835997682853}
